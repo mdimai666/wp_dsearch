@@ -63,6 +63,7 @@ function d_ajax_search(){
     $response['posts'] = $m_posts;
 
 
-    wp_send_json($response);
+    wp_send_json($m_posts);
+    // wp_send_json($response);
 
 }
