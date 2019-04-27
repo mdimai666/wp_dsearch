@@ -1,5 +1,6 @@
 # wp_dsearch
-Return sumplify posts list
+WordPress plugin.
+Return sumplify posts list.
 
 ## Install
 Install as standart plugin. Require WP Rest-API
@@ -9,7 +10,8 @@ Install as standart plugin. Require WP Rest-API
 ## Request
 
 **Route**
-> /wp-json/dsearch/v1/posts?search=text&posts_per_page=20&exact=1&categories=33
+
+``/wp-json/dsearch/v1/posts?search=text&posts_per_page=20&exact=1&categories=33``
 
 
 **Params**
