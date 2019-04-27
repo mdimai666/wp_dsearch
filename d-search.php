@@ -28,6 +28,7 @@ function d_ajax_search(){
 
     $categories = isset($_GET['categories'])?$_GET['categories']:'';
     $exact = isset($_GET['exact'])?$_GET['exact']:0;
+    $lang = isset($_GET['lang'])?$_GET['lang']:'';
 
     $response = [];
 
@@ -36,7 +37,7 @@ function d_ajax_search(){
 
     $response['search'] = $search_text;
 
-    query_posts("s=$search_text&post_type=post&posts_per_page=$posts_per_page&post_status=publish&cat=$categories&exact=$exact");
+    query_posts("s=$search_text&post_type=post&posts_per_page=$posts_per_page&post_status=publish&cat=$categories&exact=$exact&lang=$lang");
     
     $m_posts = [];
 
