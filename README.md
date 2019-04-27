@@ -11,7 +11,7 @@ Install as standart plugin. Require WP Rest-API
 
 **Route**
 
-``/wp-json/dsearch/v1/posts?search=text&posts_per_page=20&exact=1&categories=33``
+``/wp-json/dsearch/v1/posts?search=text&posts_per_page=20&exact=1&categories=33&lang=en``
 
 
 **Params**
@@ -20,6 +20,7 @@ Install as standart plugin. Require WP Rest-API
 {Number} posts_per_page | default WP_param //-1 for all
 {Boolean} exact | default 0 //set 1 for toggle
 {Number} categories | default null
+{String} lang | default null //Polylang plugin param
 ```
 
 ## Return
